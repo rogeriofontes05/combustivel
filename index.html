@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Combustível</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="cel">
+            <h1>PAGO</h1>
+            <input id="vlPago" type="text">
+        </div>
+        <div class="cel">
+            <h1>DISTÂNCIA</h1>
+            <input id="distancia" type="text">
+        </div>
+        <div class="cel">
+            <h1>IDA E VOLTA</h1>
+            <input id="volta" type="checkbox">
+        </div>
+    </header>
+
+
+    <main>
+        <table>
+            <thead>
+                <th colspan="2" class="TituloComb">
+                    <h1>PREÇO DO COMBUSTÍVEL</h1>
+                </th>
+                <!-- <th></th> -->
+                <th class="colKML">
+                    <h1>Km/l</h1>
+                </th>
+                <th>
+                    <h1>CONSUMO LITROS</h1>
+                </th>
+                <th>
+                    <h1>R$</h1>
+                </th>
+                <th>
+                    <h1>LUCRO</h1>
+                </th>
+            </thead>
+            <tbody>
+                <!-- Gasolina -->
+                <td class="col1">Gas.</td>
+                <td class="col2"><input id="gastoRealGas" class="input90px" type="text"></td>
+                <!-- Preço  -->
+                <td><input id="gasKm" class="input40px" type="text"></td> <!-- Autonomia  -->
+                <td class="colConsumo" id="consumoGas"></td> <!-- Consumo  -->
+                <td id="RealGas" class="colRS"></td> <!-- Gasto em R$  -->
+                <td id="lucroGas" class="colLucro"></td> <!-- Lucro  -->
+            </tbody>
+
+            <tbody>
+                <!-- Álcool -->
+                <td class="col1">Alc.</td>
+                <td><input id="gastoRealAlc" class="input90px" type="text"></td><!-- Preço  -->
+                <td><input id="alcKm" class="input40px" type="text"></td> <!-- Autonomia  -->
+                <td class="colConsumo" id="consumoAlc"></td><!-- Consumo  -->
+                <td id="RealAlc" class="colRS"></td><!-- Gasto em R$  -->
+                <td id="lucroAlc" class="colLucro"></td> <!-- Lucro  -->
+            </tbody>
+
+            <tbody>
+                <!-- GNV -->
+                <td class="col1">GNV</td>
+                <td><input id="gastoRealGnv" class="input90px" type="text"></td><!-- Preço  -->
+                <td><input id="gnvKm" class="input40px" type="text"></td> <!-- Autonomia  -->
+                <td class="colConsumo" id="consumoGnv"></td><!-- Consumo  -->
+                <td id="RealGnv" class="colRS"></td><!-- Gasto em R$  -->
+                <td id="lucroGnv" class="colLucro"></td> <!-- Lucro  -->
+            </tbody>
+        </table>
+
+        <div class="extras">
+            <h2>Despesas extras</h2>
+            <input id="extras" class="input90px" type="text">
+        </div>
+
+        <footer>
+            <button id="btnCalcular" onclick="calcular()">CALCULAR</button>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </main>
+</body>
+
+</html>

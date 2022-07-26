@@ -1,0 +1,179 @@
+@import './configPagina.scss';
+@import './area1.scss';
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #5f9ea0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px ;
+    width: 450px;
+
+    h1 {
+        text-align: center;
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    h2 {
+        color: #5f9ea0;
+    }
+
+    .colConsumo,
+    .colRS,
+    .colLucro {
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: #d4eded ;
+    }
+
+    .colLucro {
+        color: rgb(7, 160, 7);
+    }
+
+
+    .extras {
+        // border: 1px solid;
+        display: flex;
+        align-items: center;
+        background-color: #d4eded;
+        height: 50px;
+        margin-top: 5px;
+
+        h2 {
+            margin: 0 5px;
+        }
+
+        #extras {
+            border: 1px solid #03a5a5;
+            width: 200px;
+            border-radius: 10px;
+        }
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        background-color: #0bbbbb;
+        color: #fff;
+        height: 75px;
+        width: 400px;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: center;
+        
+
+        #vlPago,
+        #distancia {
+            font-size: 30px;
+            text-align: center;
+            height: 40px;
+            width: 100px;
+            border-radius: 8px;
+        }
+
+        #volta {
+            height: 30px;
+            width: 30px;
+            margin-top: 3px;
+        }
+    }
+
+    main {
+        width: 400px;
+
+        .input90px,
+        .input40px {
+            border: none;
+            height: 40px;
+            width: 90px;
+            font-size: 26px;
+            text-align: center;
+
+        }
+
+        .input40px {
+            width: 40px;
+
+        }
+
+        table {
+            border: 1px solid #5f9ea0;
+            width: 400px;
+            border-collapse: collapse;
+
+            .col1 {
+                background-color: #d4eded;
+            }
+
+            .col2 {
+                width: 90px;
+            }
+
+            td {
+                text-align: center;
+                border: 1px solid #5f9ea0;
+                height: 30px;
+            }
+
+            thead {
+                h1 {
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+
+                th {
+                    border: 1px solid #5f9ea0;
+                    background-color: #d4eded;
+                }
+
+                color: #03a5a5;
+                margin: 0;
+                padding: 0 2px;
+                border: 1px solid #5f9ea0;
+
+                .TituloComb {
+                    width: 50px;
+                }
+
+                .colKML {
+                    width: 40px;
+                }
+
+            }
+
+            
+
+        }
+    }
+
+    footer {
+        text-align: center;
+
+        #btnCalcular {
+            font-size: 26px;
+            font-weight: bold;
+            color: #fff;
+            width: 400px;
+            height: 80px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #0bbbbb;
+
+            &:hover {
+                background-color: #03a5a5;
+            }
+
+            &:active {
+                background-color: rgb(183, 228, 225);
+            }
+        }
+    }
+}

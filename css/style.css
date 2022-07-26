@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.area1 {
+  border: 1px solid #c7c7c7;
+  border-radius: 20px;
+  display: flex;
+  margin: auto;
+  background-color: #2cc1d4;
+}
+
+.area1 .combustiveis,
+.area1 .altonomia {
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.area1 .combustiveis .lblFormat,
+.area1 .altonomia .lblFormat {
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0e8f8f;
+}
+
+.area1 .gas,
+.area1 .alcool {
+  text-align: center;
+  margin: auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #5f9ea0;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px;
+  width: 450px;
+}
+
+body h1 {
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+body h2 {
+  color: #5f9ea0;
+}
+
+body .colConsumo,
+body .colRS,
+body .colLucro {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #d4eded;
+}
+
+body .colLucro {
+  color: #07a007;
+}
+
+body .extras {
+  display: flex;
+  align-items: center;
+  background-color: #d4eded;
+  height: 50px;
+  margin-top: 5px;
+}
+
+body .extras h2 {
+  margin: 0 5px;
+}
+
+body .extras #extras {
+  border: 1px solid #03a5a5;
+  width: 200px;
+  border-radius: 10px;
+}
+
+body header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0bbbbb;
+  color: #fff;
+  height: 75px;
+  width: 400px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+body header #vlPago,
+body header #distancia {
+  font-size: 30px;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  border-radius: 8px;
+}
+
+body header #volta {
+  height: 30px;
+  width: 30px;
+  margin-top: 3px;
+}
+
+body main {
+  width: 400px;
+}
+
+body main .input90px,
+body main .input40px {
+  border: none;
+  height: 40px;
+  width: 90px;
+  font-size: 26px;
+  text-align: center;
+}
+
+body main .input40px {
+  width: 40px;
+}
+
+body main table {
+  border: 1px solid #5f9ea0;
+  width: 400px;
+  border-collapse: collapse;
+}
+
+body main table .col1 {
+  background-color: #d4eded;
+}
+
+body main table .col2 {
+  width: 90px;
+}
+
+body main table td {
+  text-align: center;
+  border: 1px solid #5f9ea0;
+  height: 30px;
+}
+
+body main table thead {
+  color: #03a5a5;
+  margin: 0;
+  padding: 0 2px;
+  border: 1px solid #5f9ea0;
+}
+
+body main table thead h1 {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+body main table thead th {
+  border: 1px solid #5f9ea0;
+  background-color: #d4eded;
+}
+
+body main table thead .TituloComb {
+  width: 50px;
+}
+
+body main table thead .colKML {
+  width: 40px;
+}
+
+body footer {
+  text-align: center;
+}
+
+body footer #btnCalcular {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  width: 400px;
+  height: 80px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0bbbbb;
+}
+
+body footer #btnCalcular:hover {
+  background-color: #03a5a5;
+}
+
+body footer #btnCalcular:active {
+  background-color: #b7e4e1;
+}
